@@ -47,3 +47,18 @@ table {
 	border-spacing: 0;
 }
 /*===================================END OF RESET=============================================*/
+#library{
+    color: black;
+    font-size: 25px;
+}
+
+.book {
+    padding: 0 auto;
+    background-color: #980505;
+    width: 300px;
+    height: 300px;
+    color: black;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
+    border: solid 1px black;
+}
