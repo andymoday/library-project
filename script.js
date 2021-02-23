@@ -12,9 +12,12 @@ function addBookToLibrary(title,author,pages,read) {
   }
 
 Book.prototype.bookDisplay = function() {
-    return(this.name + ', \n' + this.author + ', \n' + this.pages + ' pages \n');
+    return (`${this.name}\r\n${this.author}\r\n${this.pages} pages`);
 }
 
+addBookToLibrary('Lolita','Nabakov',123,'read')
+addBookToLibrary('LOTR','Tolkein',1234,'unread')
+addBookToLibrary('Lucky Jim','Kingsley Amis',293,'read')
 addBookToLibrary('Lolita','Nabakov',123,'read')
 addBookToLibrary('LOTR','Tolkein',1234,'unread')
 addBookToLibrary('Lucky Jim','Kingsley Amis',293,'read')
