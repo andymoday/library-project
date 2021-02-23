@@ -4,8 +4,7 @@
         <title>Library</title>
         <link href="style.css" rel="stylesheet"> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
-        
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
@@ -17,12 +16,13 @@
               <label for="author">Author:</label>
               <input type="text" id="author" name="author">
               <label for="pages">Number Of Pages:</label>
-              <input type="text" id="pages" name="pages">
-              <label for="read">Read?:</label>
-              <input type="checkbox" id="read" name="read" >
-            <!-- <input type="submit" value="Submit">-->
-              <button type="submit" class="btn" onclick="closeForm()">Submit</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              <input type="number" id="pages" name="pages" required="true">
+              <label class = "switch" for="read">Read?:
+                <input type="checkbox" class="read-check" id="read" name="read" >
+                <span class="slider round"></span>
+              </label>
+              <button type="submit" class="btn submit" onclick="closeForm()">SUBMIT</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
           </form>  
         </div>
           <container id="library">
